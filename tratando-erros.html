@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Tratando Erro</title>
+</head>
+<body>
+		<script>
+			var video = Array()
+			video[1] = Array()
+			video[1]['nome'] = 'Fullmetal Alchemist'
+			video[1]['categoria'] = 'Anime'
+			function getVideo(video) {
+
+				try{
+
+					console.log(video[0]['nome'])
+
+				}catch(erro){
+					console.log('Podemos Tratar o Erro')
+					//throw new Error('Houve um erro, estamos trabalhando para resolver')
+				}
+				finally{
+					console.log('Erro passa por aqui')
+				}
+
+				console.log('A aplicação não morreu')
+			
+			}
+
+			getVideo(video)
+
+		</script>
+</body>
+</html>

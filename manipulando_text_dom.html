@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Manipulando o DOM</title>
+</head>
+<body>
+
+	<input 
+		type="text"
+		onkeyup="distribuirCaracter()"
+		placeholder="Digite Um Caracter"
+		id="entrada" 
+		class="campo_texto" 
+		name=""
+	>
+	<br>
+	<br>
+
+	<h4>Letras:</h4>
+	<input 
+	type="text"
+	disabled="disabled" 
+	id="letra" 
+	name=""
+	 
+	>
+	<br>
+	<br>
+
+	<h4>Números</h4>
+	<input 
+	type="text"
+	disabled="disabled"
+	id="numero" 
+	name=""
+	>
+
+
+	<script>
+		function distribuirCaracter() {
+			var caracter = document.getElementById('entrada').value
+			document.getElementById('entrada').value = ''
+			console.log(caracter)
+
+			caracter.trim()
+
+			switch(caracter){
+				case '0':
+				case '1':
+				case '2':
+				case '3':
+				case '4':
+				case '5':
+				case '6':
+				case '7':
+				case '8':
+				case '9':
+					document.getElementById('numero').value = caracter
+					break;
+				default:
+				document.getElementById('letra').value = caracter
+
+			}
+		}
+	</script>
+
+</body>
+</html>

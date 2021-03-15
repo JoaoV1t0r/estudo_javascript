@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>BOM</title>
+</head>
+<body>
+
+	
+
+	<script>
+
+		var i = 5
+		/*setTimeout(function () {
+			document.write('Hello Word<br> ')
+
+		}, 2000)*/
+
+		var x = setInterval(function () {
+			document.write(i + '<br>')
+			i--
+			if (i === 0) {
+				clearInterval(x)
+				//window.location.reload()
+			}
+		}, 500)
+
+
+	</script>
+
+</body>
+</html>

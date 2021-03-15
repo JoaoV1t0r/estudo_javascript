@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Array</title>
+</head>
+<body>
+	<input id="novo_objeto" type="text" name="">
+	<button onclick="adicionarLista()">Adicionar</button>
+	<button onclick="ordernarLista()">Ordenar</button>
+
+	<script>
+		var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+		function adicionarLista() {
+			objeto_novo = document.getElementById('novo_objeto').value
+			if (objeto_novo === '') {
+				alert('Digite um valor válido')
+			}
+			else if(objetos.indexOf(objeto_novo) >= 0 ){
+				alert('O objeto já foi adicionado')
+				document.getElementById('novo_objeto').value = ''
+			}
+			else{
+				objetos.push(objeto_novo)	
+				console.log(objetos)
+				document.getElementById('novo_objeto').value = ''
+			}
+		}
+
+		function ordernarLista(){
+			objetos.sort()
+			console.log(objetos)
+		}
+
+	</script>
+</body>
+</html>

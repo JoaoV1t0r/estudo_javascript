@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Array</title>
+</head>
+<body>
+	<script>
+		var procura = prompt('Digite a fruta que você procura')
+		var lista_frutas = Array('Banana', 'Maça', 'Uva', 'Pera')
+		if(lista_frutas.indexOf('Uva') === -1){
+			console.log('Elemento não existe')
+		}
+		else{
+			var posicao = lista_frutas.indexOf(procura) + 1
+			console.log('Elemento está na posição ' + posicao )
+		}
+	</script>
+</body>
+</html>

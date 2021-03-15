@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Funçoes Nativas para Manipulas Datas</title>
+</head>
+<body>
+	<script>
+		/*
+		var data = new Date()
+		document.write(data.toString())
+		document.write('<hr>')
+		data.setDate(data.getDate() + 5)
+		document.write(data.toString())
+		*/
+		var data1 = new Date(2020, 10, 23)
+		var data2 = new Date(2021, 0, 1)
+		document.write(data1.toString())
+		document.write('<hr>')
+		document.write(data2.toString())
+
+
+		document.write('<br> <br><br> <hr>')
+		document.write(data1.getTime())
+		document.write('<hr>')
+		document.write(data2.getTime())
+
+
+		document.write('<br> <br><br> <hr>')
+		var milisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+		document.write(milisegundos_entre_datas)
+
+		document.write('<br> <br><br> <hr>')
+		var milisegundos_por_dia = 1*24*60*60*1000
+		document.write('Um dia tem: '+ milisegundos_por_dia + ' milisegundos')
+		document.write('<br> <br><br> <hr>')
+
+		document.write('Adiferença entre as datas é de ' + Math.ceil(milisegundos_entre_datas / milisegundos_por_dia) + ' dias.')
+
+
+		
+
+
+
+
+
+	</script>
+</body>
+</html>

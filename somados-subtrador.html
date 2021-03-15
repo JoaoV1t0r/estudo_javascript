@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Somador / Subtrador</title>
+</head>
+<body>
+	<script>
+
+		var num1 = parseInt(prompt('Digite o Valor 1:'))
+		var num2 = parseInt(prompt('Digite o Valor 2:'))
+		var operacao = prompt('Digite a operação: Soma ou Subtração')
+
+		function operacaoSoma(num1, num2) {
+			var resultado = num1 + num2
+			return resultado
+		}
+
+		function operacaoSubtrair(num1, num2){
+			var resultado = num1 - num2
+			return resultado
+		}
+		
+
+		if (operacao == 'soma') {
+			var resultado = operacaoSoma(num1, num2)
+			document.write('O resultado da soma é: ' + resultado)
+		}
+		else{
+			var resultado = operacaoSubtrair(num1, num2)
+			document.write('O resultado da Subtração é: ' + resultado)
+		}
+
+
+	</script>
+</body>
+</html>

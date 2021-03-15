@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+</head>
+<body>
+    <script>
+        var nota1 = prompt('Digite a Nota1:')
+        var nota2 = prompt('Digite a Nota2:')
+        var media_geral = 7
+        nota1 = parseFloat(nota1)
+        nota2 = parseFloat(nota2)
+        media_aluno = (nota1+nota2)/2
+        
+        if (media_aluno>= media_geral) {
+        	document.write('<br>Aluno APROVADO<br>')
+        	document.write('Média do Aluno:'+ media_aluno)
+        }
+        else{
+        	document.write('<br>Aluno REPROVADO<br>')
+        	document.write('Média do Aluno:'+ media_aluno)
+        }
+        
+    </script>
+</body>
+</html>

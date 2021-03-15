@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Input</title>
+    <style>
+        input{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input
+    onfocus="acionaCampo()"
+    onblur="validaCampo()"
+     id="campo"
+    type="text"
+    placeholder="Digite pelo menos 3 Caracteres"
+
+    >
+    <script>
+        function acionaCampo(){
+            document.getElementById('campo').style.background = 'yellow'
+        }
+
+        function validaCampo() {
+            var valorCampo = document.getElementById('campo').value
+
+            if(valorCampo.length < 3){
+                document.getElementById('campo').style.background = 'red'
+            }
+            else{
+                document.getElementById('campo').style.background = 'rgb(153, 255, 0)'
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>App Média do Aluno</title>
+	<style type="text/css" media="screen">
+		body{
+			display: block;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<input 
+	type="number" 
+	min="0" 
+	max="10" 
+	id="nota1" 
+	placeholder="Nota 1">
+
+	<input 
+	min="0" 
+	max="10" 
+	type="number" 
+	id="nota2" 
+	placeholder="Nota 2">
+
+	<button onclick="calcularMedia()">Calcular Média</button>
+
+	<input 
+	disabled="disabled"
+	id="mediaFinal"
+	placeholder="Média">
+
+	<input 
+	disabled="disabled"
+	id="resultado"
+	placeholder="Resultado">
+
+	<script src="index.js" type="text/javascript"></script>
+
+</body>
+</html>

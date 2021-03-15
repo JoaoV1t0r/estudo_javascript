@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>BOM</title>
+</head>
+<body>
+
+	<button onclick="abrirJanela()">Abrir Janela</button>
+	<button onclick="fecharJanela()">Fechar Janela</button>
+	
+	<script>
+
+		var janela
+
+		function abrirJanela() {
+			janela = window.open('https://classroom.google.com/')
+		}
+
+		function fecharJanela() {
+			janela.close()
+		}
+	</script>
+
+</body>
+</html>
